@@ -1,0 +1,166 @@
+@font-face {
+    font-family: montserrat-medium;
+    src: url(fonts/Montserrat-Medium.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: montserrat regular;
+    src: url(fonts/Montserrat-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: playfair display;
+    src: url(fonts/PlayfairDisplay.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: montserraat;
+    src: url('fonts/ofont.ru_Montserrat.ttf') format('truetype');
+}
+body {
+    margin: 0;
+}
+.container {
+    margin: 0 120px
+}
+
+.header-logo-name {
+    width: 198px;
+    height: 45px;
+    display: flex; /* Выравнивание */
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Если изображение выходит за рамки */
+}
+
+.header-logo-name img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto; /* Сохраняет пропорции */
+    display: block; /* Убирает лишние отступы */
+}
+
+
+.header {
+     background-image: url(Untitled2.png) ;
+     height: 100vh;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.header-line {
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-item{
+    color: white;
+    text-decoration: none;
+    font-family: montserraat;
+    font-weight: 700;
+    font-size: 15px;
+
+    margin-right: 25px;
+}
+
+.nav {
+    display: flex;
+    gap: 50px;
+}
+
+.menu {
+    height: 30px;
+    width: 30px;
+
+}
+
+.header-title {
+    color: #fff;
+   font-family:playfair display;
+   font-size: 80px;
+   font-weight: bold;
+   max-width: 700px;
+   margin-top: 30px;
+   line-height: 70px;
+}
+
+.sub-title {
+    font-family: montserrat regular;
+    font-size: 25px;
+    font-weight: 300;
+    max-width: 500px;
+    line-height: 45px;
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+
+.header-button {
+    background-color: #2DFFC9;
+    padding: 29px 27px;
+    font-family: montserrat regular;
+    font-size: 25px;
+    border-radius: 45px;
+    color: #141245;
+    text-decoration: none;
+}
+
+
+.button-all {
+    display: flex; 
+    flex-flow: row nowrap;
+    align-items: center; /* Выравнивает элементы по вертикали */
+    gap: 20px; /* Отступ между кнопкой и Play Button */
+    height: auto;
+    padding-bottom: 60px;
+}
+
+.header-button-play img {
+    height: 77px;
+    width: auto;
+    margin-top: 17px;
+    
+}
+
+.btn-name {
+    font-family: montserrat-medium;
+    font-size: 25px;
+    color: #928D8D;
+    text-decoration: none;
+    max-width: 70px;
+    line-height: 35px;
+    margin-top: 17px;
+}
+
+.social-media {
+    font-family: montserrat;
+    font-size: 20px;
+    color: #fff; /* Измени цвет при необходимости */
+}
+
+.sm-icon {
+    display: flex; /* Выстраивает иконки в ряд */
+    justify-content: center; /* Выравнивает их по центру */
+    gap: 20px; /* Отступ между иконками */
+    width: fit-content; /* Устанавливает ширину div по содержимому */
+    height: fit-content; /* Устанавливает высоту по содержимому */
+}
+
+
+.sm-icon a img {
+    transition: transform 0.3s ease; /* Анимация при наведении */
+}
+
+.sm-icon a img:hover {
+    transform: scale(1.1); /* Лёгкое увеличение при наведении */
+}
+
+.sm-icon a {
+    display: inline-block; /* Делаем ссылку блочной по размеру изображения */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+.sm-icon img {
+    display: block; /* Убираем пустое пространство под изображением */
+}
